@@ -1,0 +1,14 @@
+:root {
+    background-color: #2B2922;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.App {
+    flex: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}

@@ -1,0 +1,140 @@
+.home-slider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-swiper {
+    width: 1140px;
+}
+
+.home-swiper-slide {
+    width: 1140px !important;
+    height: 560px !important;
+}
+
+.slide-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.slide-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.slide-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.slide-content:hover .slide-background {
+    transform: scale(1.1) rotate(-3deg);
+}
+
+.slide-info {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.slide-icon {
+    background: #FFB80C;
+    color: black;
+    padding: 4px;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+    font-size: 12px;
+    font-weight: 700;
+
+}
+
+.slide-icon:hover {
+    background: #FF7C7C;
+    transform: translateY(-2px);
+}
+
+.slide-title {
+    color: white;
+    position: relative;
+    padding-bottom: 10px;
+    font-family: montserrat, sans-serif;
+    font-size: 62px;
+    font-weight: 800px;
+}
+
+.slide-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: #ffffff;
+    transition: width 0.3s ease;
+    
+}
+
+.slide-content:hover .slide-title::after {
+    width: 100%;
+}
+
+.slide-date {
+    color: #fff;
+    font-size: 14px;
+}
+
+.slide-button {
+    background: #FFB80C;
+    color: black;
+    border: none;
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.slide-button:hover {
+    background: #FF7C7C;
+    transform: translateY(-2px);
+}
+
+.swiper-pagination {
+    position: relative;
+    margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+    background: #FFB80C;
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}

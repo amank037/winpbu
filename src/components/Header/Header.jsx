@@ -1,13 +1,19 @@
 import './Header.css'
-import React from 'react'
+import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  }
+
   return (
     <div className='header-div'>
         <div className='trending-div'>
@@ -20,9 +26,12 @@ function Header() {
                 <img src="https://winpibu.com/wp-content/uploads/2025/03/winpbu-logo-1.png" alt="logo" className='header-logo'/>
             </div>
             <div className='navbar-container'>
-                    <nav>
-                        <ul>
-                            <li><a href="/">হোম পেইজ</a></li>
+                <nav>
+                    <button className={isMenuOpen ? 'hamburger-menu active' : 'hamburger-menu'} onClick={toggleMenu}>
+                        <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
+                    </button>
+                    <ul className={isMenuOpen ? 'mobile-menu active' : 'mobile-menu'}>
+                        <li><a href="/">হোম পেইজ</a></li>
 
                             <li><a href="">প্রশ্ন উত্তর</a></li>
 
@@ -67,6 +76,21 @@ function Header() {
                         autoplay={{
                             delay: 3000,
                             disableOnInteraction: false,
+                        }}
+                        loop={true}
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 1,
+                                spaceBetween: 10
+                            },
+                            768: {
+                                slidesPerView: 2,
+                                spaceBetween: 15
+                            },
+                            993: {
+                                slidesPerView: 3,
+                                spaceBetween: 20
+                            }
                         }}
                     >
                         <SwiperSlide>

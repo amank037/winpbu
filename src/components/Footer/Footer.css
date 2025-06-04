@@ -10,7 +10,6 @@
 .footer-mid {
     width: 100%;
     max-width: 1140px;
-    padding: 10px;
     margin: 0 auto;
 }
 .footer-top{
@@ -71,4 +70,22 @@
     width: 100%;
     display: flex;
     align-items: flex-start;
+}
+
+@media screen and (max-width: 993px) {
+    .footer-top h2 {
+        padding: 0 40px;
+    }
+    .footer-top a{
+        padding: 15px 40px 0;
+    }
+    .footer-mid-title {
+        padding: 0 40px;
+    }
+    .footer-mid-item{
+        padding: 15px 40px;
+    }
+    .footer-bottom-container{
+        padding: 0 40px;
+    }
 }

@@ -131,6 +131,7 @@
     background-color: #FFB80C;
     padding: 10px 20px;
     position: relative;
+    height: 20px;
 }
 .breaking-div::before {
     position: absolute;
@@ -161,9 +162,9 @@
     width: 100%;
 }
 
-.swiper-slide {
+/* .swiper-slide {
     width: 33.33% !important;
-}
+} */
 
 .swiper-slide a {
     text-decoration: none;
@@ -173,4 +174,80 @@
 }
 .swiper-slide a:hover {
     color: #FF7C7C;
+}
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+@media screen and (max-width: 993px) {
+    .header-middle-div {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .hamburger-menu.active {
+        top: -800%;
+    }
+    .navbar-container{
+        padding: 10px;
+    }
+    .navbar-container nav {
+        position: relative;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: black;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+        right: 0;
+        padding: 60px 20px 20px;
+        transition: right 0.3s ease;
+    }
+
+    .navbar-container li {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar-container li ul {
+        position: static;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .navbar-container li:hover > ul {
+        display: none;
+    }
+
+    .navbar-container li.active > ul {
+        display: flex;
+    }
+
+    .navbar-container a {
+        padding: 10px 0;
+    }
 }

@@ -50,6 +50,8 @@
     margin: 0;
     display: flex;
     gap: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-container li {

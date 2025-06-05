@@ -117,16 +117,16 @@
 
 @media (max-width: 576px) {
     .sub-admin-left-table {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     .sub-admin-left-table th,
     .sub-admin-left-table td {
-        padding: 0.6rem;
+        padding: 0.4rem;
     }
 
     .sub-admin-left-table th {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 }
 

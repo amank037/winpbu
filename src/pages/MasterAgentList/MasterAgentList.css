@@ -117,16 +117,16 @@
 
 @media (max-width: 576px) {
     .master-agent-left-table {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     .master-agent-left-table th,
     .master-agent-left-table td {
-        padding: 0.6rem;
+        padding: 0.4rem;
     }
 
     .master-agent-left-table th {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 }
 

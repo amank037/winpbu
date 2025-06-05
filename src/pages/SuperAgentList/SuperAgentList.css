@@ -117,16 +117,16 @@
 
 @media (max-width: 576px) {
     .super-agent-left-table {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     .super-agent-left-table th,
     .super-agent-left-table td {
-        padding: 0.6rem;
+        padding: 0.4rem;
     }
 
     .super-agent-left-table th {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 }
 

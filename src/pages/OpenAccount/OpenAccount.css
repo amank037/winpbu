@@ -1,0 +1,224 @@
+.open-account-div {
+    width: 100%;
+}
+
+.open-account-div2 {
+
+    padding: 2rem 2rem 0;
+    border-bottom: 1px dotted #ffffff;
+    margin-bottom: 2rem;
+}
+
+.open-account-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+}
+
+.open-account-left {
+    flex: 1;
+    border-right: 1px dotted #ffffff;
+    padding-right: 2rem;
+}
+
+.open-account-left-top {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.open-account-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.open-account-left-top-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.open-account-left-top-date {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.open-account-left-form-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.open-account-left-form{
+    margin-bottom: 2rem;
+}
+.left-border{
+    border-left: 5px solid #fff;
+}
+.open-account-left-desc{
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.open-account-left-desc h3{
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+.open-account-left-desc p{
+    font-size: 0.8rem;
+}
+.open-account-bottom-text{
+    font-size: 0.9rem;
+}
+.open-account-bottom-text:last-child{
+    margin-bottom: 2rem;
+}
+
+
+/* Right Section */
+.open-account-right {
+    width: 400px;
+}
+
+.open-account-right-form {
+    margin-bottom: 2rem;
+    text-align: left;
+    border: 1px solid #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.open-account-right-form p {
+    margin-bottom: 0.5rem;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.open-account-right-form-input {
+    display: flex;
+}
+
+.open-account-right-form-input input {
+    flex: 1;
+    padding: 1rem;
+    background: transparent;
+    border: 1px solid #868686;
+    border-radius: 4px 0 0 4px;
+    color: #fff;
+    
+}
+
+.open-account-right-form-input button {
+    background: #FFB80C;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.open-account-right-form-input button:hover {
+    background: #FF7C7C;
+}
+
+.open-account-right-bottom{
+    font-family: sans-serif;
+}
+.open-account-right-list-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted #ffffff;
+    color: #fff;
+}
+
+.open-account-right-list {
+    list-style: none;
+    padding: 0;
+}
+
+.open-account-right-list li {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px dotted #ffffff;
+}
+
+.open-account-right-list a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.open-account-right-list a:hover {
+    color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .open-account-container {
+        flex-direction: column;
+    }
+
+    .open-account-left {
+        border-right: none;
+    }
+
+    .open-account-right {
+        width: 100%;
+    }
+
+    .open-account-left-bottom-form {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .open-account-left-table-top,
+    .open-account-left-table-item {
+        grid-template-columns: 0.8fr 1fr 1fr 0.5fr 1.2fr 0.8fr;
+        font-size: 0.9rem;
+    }
+
+    .open-account-left-table-top p {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .open-account-left-table-item p,
+    .open-account-left-table-item a {
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .open-account-div2 {
+        padding: 1rem;
+    }
+
+    .open-account-left-top-title {
+        font-size: 1.4rem;
+    }
+    .open-account-left-table {
+        font-size: 0.8rem;
+    }
+
+    .open-account-left-table-top p {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .open-account-left-table-item p,
+    .open-account-left-table-item a {
+        padding: 0.6rem;
+    }
+
+    .open-account-left-table-wa-img {
+        width: 25px;
+        height: 25px;
+    }
+}

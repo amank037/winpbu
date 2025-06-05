@@ -1,0 +1,210 @@
+.search-agent-phone-div {
+    width: 100%;
+}
+
+.search-agent-phone-div2 {
+
+    padding: 2rem 2rem 0;
+    border-bottom: 1px dotted #ffffff;
+    margin-bottom: 2rem;
+}
+
+.search-agent-phone-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+}
+
+.search-agent-phone-left {
+    flex: 1;
+    border-right: 1px dotted #ffffff;
+    padding-right: 2rem;
+}
+
+.search-agent-phone-left-top {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.search-agent-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.search-agent-phone-left-top-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.search-agent-phone-left-top-date {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.search-agent-phone-left-bottom {
+    text-align: center;
+}
+
+.search-agent-phone-left-bottom-title {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.search-agent-phone-left-bottom-form {
+    width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    border: 1px solid #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.search-agent-phone-left-bottom-form p {
+    margin-bottom: 0.5rem;
+    font-family: sans-serif;
+}
+
+.search-agent-phone-left-bottom-form input {
+    width: 90%;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    background: #1a1a1a;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.search-agent-phone-left-bottom-form button {
+    background: #45a049;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-agent-phone-left-bottom-form button:hover {
+    background: #357a38;
+}
+
+.search-agent-phone-left-bottom-desc {
+    margin: 1rem 1rem 2rem;
+}
+
+/* Right Section */
+.search-agent-phone-right {
+    width: 400px;
+}
+
+.search-agent-phone-right-form {
+    margin-bottom: 2rem;
+    text-align: left;
+    border: 1px solid #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.search-agent-phone-right-form p {
+    margin-bottom: 0.5rem;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.search-agent-phone-right-form-input {
+    display: flex;
+}
+
+.search-agent-phone-right-form-input input {
+    flex: 1;
+    padding: 1rem;
+    background: transparent;
+    border: 1px solid #868686;
+    border-radius: 4px 0 0 4px;
+    color: #fff;
+    
+}
+
+.search-agent-phone-right-form-input button {
+    background: #FFB80C;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.search-agent-phone-right-form-input button:hover {
+    background: #FF7C7C;
+}
+
+.search-agent-phone-right-bottom{
+    font-family: sans-serif;
+}
+.search-agent-phone-right-list-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted #ffffff;
+    color: #fff;
+}
+
+.search-agent-phone-right-list {
+    list-style: none;
+    padding: 0;
+}
+
+.search-agent-phone-right-list li {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px dotted #ffffff;
+}
+
+.search-agent-phone-right-list a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.search-agent-phone-right-list a:hover {
+    color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .search-agent-phone-container {
+        flex-direction: column;
+    }
+
+    .search-agent-phone-left {
+        border-right: none;
+    }
+
+    .search-agent-phone-right {
+        width: 100%;
+    }
+
+    .search-agent-phone-left-bottom-form {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .search-agent-phone-div2 {
+        padding: 1rem;
+    }
+
+    .search-agent-phone-left-top-title {
+        font-size: 1.4rem;
+    }
+}

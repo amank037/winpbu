@@ -33,65 +33,6 @@
     font-weight: 700;
 }
 
-.home-bottom-div{
-    max-width: 1140px;
-    margin: 20px auto 150px;
-}
-
-.home-bottom-title{
-    font-size: 32px;
-    border-bottom: 1px dotted #fff;
-    width: 100%;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-.home-bottom-grid1{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-bottom: 20px;
-}
-.home-bottom-grid2{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-.home-bottom-slide {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.home-bottom-slide-image {
-    width: 100%;
-    max-width: 100%;
-    height: 240px;
-    overflow: hidden;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.home-bottom-slide-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.5s ease;
-}
-.home-bottom-slide-image:hover img{
-    transform: scale(1.2) rotate(-5deg);
-}
-
-.home-bottom-slide-title {
-    margin-top: 10px;
-    font-size: 24px;
-    font-weight: 600;
-    font-family: montserrat, sans-serif;
-}
-
-.home-bottom-slide-date {
-    margin-top: auto;
-    padding-top: 10px;
-    font-size: 14px;
-}
 @media screen and (max-width: 992px) {
     .home-mid-title {
         font-size: 48px;
@@ -100,42 +41,10 @@
     .home-mid-div{
         padding: 0 40px;
     }
-    
-    .home-bottom-title {
-        font-size: 28px;
-        padding: 0 40px;
-    }
-    
-    .home-bottom-grid1 {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 0 40px;
-    }
-    
-    .home-bottom-grid2 {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 0 40px;
-    }
-    
-    .home-bottom-slide-title {
-        font-size: 20px;
-    }
 }
 
 @media screen and (max-width: 768px) {
     .home-mid-title {
         font-size: 36px;
-    }
-    
-    .home-bottom-title {
-        font-size: 24px;
-    }
-    
-    .home-bottom-grid1, 
-    .home-bottom-grid2 {
-        grid-template-columns: 1fr;
-    }
-    
-    .home-bottom-slide-title {
-        font-size: 18px;
     }
 }

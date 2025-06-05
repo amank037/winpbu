@@ -1,10 +1,11 @@
 import './Header.css'
 import React, { useState } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay } from 'swiper/modules'
+import 'swiper/css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 
 function Header() {
@@ -31,9 +32,9 @@ function Header() {
                         <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
                     </button>
                     <ul className={isMenuOpen ? 'mobile-menu active' : 'mobile-menu'}>
-                        <li><a href="/">হোম পেইজ</a></li>
+                            <li><Link to="/">হোম পেইজ</Link></li>
 
-                            <li><a href="">প্রশ্ন উত্তর</a></li>
+                            <li><Link to="/faq">প্রশ্ন উত্তর</Link></li>
 
                             <li>
                                 <a>সাইট <FontAwesomeIcon icon={faChevronDown} className="dropdown-icon" /></a>
@@ -43,19 +44,19 @@ function Header() {
                                 </ul>
                             </li>
 
-                            <li><a href="">এজেন্ট কে খুঁজুন</a></li>
+                            <li><Link to="/search-agent-by-phone">এজেন্ট কে খুঁজুন</Link></li>
 
                             <li>
                                 <a>এজেন্ট লিস্ট <FontAwesomeIcon icon={faChevronDown} className="dropdown-icon" /></a>
                                 <ul>
-                                    <li><a href="">মাস্টার এজেন্ট লিস্ট</a></li>
-                                    <li><a href="">সুপার এজেন্ট লিস্ট</a></li>
-                                    <li><a href="">সাব এডমিন লিস্ট</a></li>
-                                    <li><a href="">সাইট এডমিন লিস্ট</a></li>
+                                    <li><Link to="/master-agent-list">মাস্টার এজেন্ট লিস্ট</Link></li>
+                                    <li><Link to="/super-agent-list">সুপার এজেন্ট লিস্ট</Link></li>
+                                    <li><Link to="/sub-admin-list">সাব এডমিন লিস্ট</Link></li>
+                                    <li><Link to="/site-admin-list">সাইট এডমিন লিস্ট</Link></li>
                                 </ul>
                             </li>
 
-                            <li><a href="">কাস্টমার সার্ভিস</a></li>
+                            <li><Link to="/customer-service">কাস্টমার সার্ভিস</Link></li>
                         </ul>
                     </nav>
             </div>
@@ -94,22 +95,22 @@ function Header() {
                         }}
                     >
                         <SwiperSlide>
-                            <a href="">একাউন্ট খোলার নিয়ম বা শর্ত গুলো কি কি?</a>
+                            <Link to="/rules-and-regulations-for-open-account">একাউন্ট খোলার নিয়ম বা শর্ত গুলো কি কি?</Link>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <a href="">ভেল্কি সাইট</a>
+                            <Link to="/ভেল্কি-সাইট">ভেল্কি সাইট</Link>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <a href="">কিভাবে আমি ভেল্কি তে এজেন্ট হতে পারি?</a>
+                            <Link to="/how-to-be-a-agent">কিভাবে আমি ভেল্কি তে এজেন্ট হতে পারি?</Link>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <a href="">এজেন্ট কে ফোন নাম্বার দিয়ে খুঁজুন</a>
+                            <Link to="/search-agent-by-phone">এজেন্ট কে ফোন নাম্বার দিয়ে খুঁজুন</Link>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <a href="">WINPBU তে কিভাবে লেনদেন করবেন?</a>
+                            <Link to="/WINPBU-তে-কিভাবে-লেনদেন-করবেন?">WINPBU তে কিভাবে লেনদেন করবেন?</Link>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <a href="">কিভাবে একাউন্ট খুলবেন?</a>
+                            <Link to="/কিভাবে-একাউন্ট-খুলবেন?">কিভাবে একাউন্ট খুলবেন?</Link>
                         </SwiperSlide>
                     </Swiper>
                 </div>

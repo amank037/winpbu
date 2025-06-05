@@ -1,0 +1,165 @@
+.velki-site-div {
+    width: 100%;
+}
+
+.velki-site-div2 {
+
+    padding: 2rem 2rem 0;
+    border-bottom: 1px dotted #ffffff;
+    margin-bottom: 2rem;
+}
+
+.velki-site-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+}
+
+.velki-site-left {
+    flex: 1;
+    border-right: 1px dotted #ffffff;
+    padding-right: 2rem;
+}
+
+.velki-site-left-top {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.velki-site-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.velki-site-left-top-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.velki-site-left-top-date {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.velki-site-left-bottom {
+    text-align: left;
+}
+
+.velki-site-left-bottom-desc {
+    margin: 1rem 0 2rem;
+}
+
+/* Right Section */
+.velki-site-right {
+    width: 400px;
+}
+
+.velki-site-right-form {
+    margin-bottom: 2rem;
+    text-align: left;
+    border: 1px solid #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.velki-site-right-form p {
+    margin-bottom: 0.5rem;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.velki-site-right-form-input {
+    display: flex;
+}
+
+.velki-site-right-form-input input {
+    flex: 1;
+    padding: 1rem;
+    background: transparent;
+    border: 1px solid #868686;
+    border-radius: 4px 0 0 4px;
+    color: #fff;
+    
+}
+
+.velki-site-right-form-input button {
+    background: #FFB80C;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.velki-site-right-form-input button:hover {
+    background: #FF7C7C;
+}
+
+.velki-site-right-bottom{
+    font-family: sans-serif;
+}
+.velki-site-right-list-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted #ffffff;
+    color: #fff;
+}
+
+.velki-site-right-list {
+    list-style: none;
+    padding: 0;
+}
+
+.velki-site-right-list li {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px dotted #ffffff;
+}
+
+.velki-site-right-list a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.velki-site-right-list a:hover {
+    color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .velki-site-container {
+        flex-direction: column;
+    }
+
+    .velki-site-left {
+        border-right: none;
+    }
+
+    .velki-site-right {
+        width: 100%;
+    }
+
+    .velki-site-left-bottom-form {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .velki-site-div2 {
+        padding: 1rem;
+    }
+
+    .velki-site-left-top-title {
+        font-size: 1.4rem;
+    }
+}

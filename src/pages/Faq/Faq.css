@@ -1,0 +1,129 @@
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.faq-container-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.faq-item {
+    max-width: 840px;
+    margin: 0 auto 3rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-icon {
+    display: inline-block;
+    background-color: #FFB80C;
+    color: #000;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.faq-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.faq-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.faq-email svg {
+    color: #ffffff;
+}
+
+.faq-email a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.faq-email a:hover {
+    color: #FF7C7C;
+}
+
+.faq-image-container {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.faq-image-container:hover .faq-image {
+    transform: scale(1.1) rotate(1deg);    
+}
+
+.faq-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.faq-desc {
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.faq-read-more a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.faq-read-more a:hover {
+    color: #FF7C7C;
+}
+
+
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 1rem;
+    }
+
+    .faq-container-title {
+        font-size: 1.5rem;
+    }
+
+    .faq-title {
+        font-size: 1.2rem;
+    }
+
+    .faq-item {
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .faq-email {
+        flex-wrap: wrap;
+    }
+}

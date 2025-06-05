@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-top: auto;
+    overflow-x: hidden;
 }
 
 .footer-top,

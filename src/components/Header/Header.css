@@ -189,7 +189,6 @@
 @media screen and (max-width: 993px) {
     .header-middle-div {
         width: 100%;
-        padding: 0 15px;
     }
 
     .hamburger-menu {
@@ -213,12 +212,13 @@
         display: none;
         position: fixed;
         top: 0;
-        right: -300px;
-        width: 300px;
+        right: -200px;
+        width: 200px;
         height: 100vh;
         background-color: black;
         flex-direction: column;
         z-index: 1000;
+        overflow-x: hidden;
     }
 
     .mobile-menu.active {
@@ -226,6 +226,13 @@
         right: 0;
         padding: 60px 20px 20px;
         transition: right 0.3s ease;
+        overflow-x: hidden; 
+    }
+
+    body { 
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
     }
 
     .navbar-container li {
@@ -240,7 +247,7 @@
     }
 
     .navbar-container li:hover > ul {
-        display: none;
+        display: flex;
     }
 
     .navbar-container li.active > ul {

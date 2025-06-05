@@ -1,25 +1,29 @@
 import './Home.css'
 import HomeSlider from '../../components/HomeSlider/HomeSlider'
 import AgentForm from '../../components/AgentForm/AgentForm'
+import BottomGrid from '../../components/BottomGrid/BottomGrid'
 
 const data1 = [
     {
       icon: "Winpbu",
       title: "Customer Service",
       date: "March 25, 2025",
-      image: "https://winpibu.com/wp-content/uploads/2025/03/1657098452448.jpeg"
+      image: "https://winpibu.com/wp-content/uploads/2025/03/1657098452448.jpeg",
+      link: "/customer-service"
     },
     {
       icon: "Winpbu",
       title: "Master Agent List",
       date: "March 23, 2025",
-      image: "https://winpibu.com/wp-content/uploads/2025/03/master-agent-1.jpg"
+      image: "https://winpibu.com/wp-content/uploads/2025/03/master-agent-1.jpg",
+      link: "/master-agent-list"
     },
     {
       icon: "Winpbu",
       title: "Super Agent List",
       date: "March 23, 2025",
-      image: "https://winpibu.com/wp-content/uploads/2025/03/super-agent-3.jpg"
+      image: "https://winpibu.com/wp-content/uploads/2025/03/super-agent-3.jpg",
+      link: "/super-agent-list"
     }
 ]
 
@@ -28,28 +32,31 @@ const data2 = [
         icon: "Winpbu",
         title: "Sub Admin List",
         date: "March 21, 2025",
-        image: "https://winpibu.com/wp-content/uploads/2025/03/sub-admin.jpg"
+        image: "https://winpibu.com/wp-content/uploads/2025/03/sub-admin.jpg",
+        link: "/sub-admin-list"
       },
       {
         icon: "FAQ",
         title: "WINPBU তে কিভাবে লেনদেন করবেন?",
         date: "March 19, 2025",
-        image: "https://winpibu.com/wp-content/uploads/2025/03/MONEY-TRANSFER-2.png"
+        image: "https://winpibu.com/wp-content/uploads/2025/03/MONEY-TRANSFER-2.png",
+        link: "/WINPBU-তে-কিভাবে-লেনদেন-করবেন?"
       },
       {
         icon: "Winpbu",
         title: "Site Admin List",
         date: "March 19, 2025",
-        image: "https://winpibu.com/wp-content/uploads/2025/03/site-admin-list-2.jpg"
+        image: "https://winpibu.com/wp-content/uploads/2025/03/site-admin-list-2.jpg",
+        link: "/site-admin-list"
       },
       {
         icon: "Winpbu",
         title: "কিভাবে একাউন্ট খুলবেন?",
         date: "March 19, 2025",
-        image: "https://winpibu.com/wp-content/uploads/2025/03/REGISTER-1.png"
+        image: "https://winpibu.com/wp-content/uploads/2025/03/REGISTER-1.png",
+        link: "/কিভাবে-একাউন্ট-খুলবেন?"
       },
 ]
-
 function Home() {
   return (
     <div>
@@ -70,33 +77,9 @@ function Home() {
                 <span className='text-bold'>এজেন্ট লিস্টঃ</span>
                 <p>  একাউন্ট খুলতে নিম্বের অনলাইন এজেন্ট লিস্ট এ ক্লিক করুন। এজেন্ট লিষ্ট এর এজেন্ট দের সাথে ইউজার দের শুধু মাত্র হোয়াটসাপ এর মাধ্যমে যোগাযোগ করতে হবে। হোয়াটসাপ ছাড়া অন্য কোন মাধ্যমে যোগাযোগ করলে বা লেনদেন করলে তা গ্রহনযোগ্য হবে না। হোয়াটসাপ এ যোগাযোগ করতে হলে এজেন্ট লিস্টে হোয়াটসাপ আইকন উপরে ক্লিক করুন অথবা ফোন নাম্বার টি মোবাইলে সেভ করে তাকে হোয়াটসাপ এ মসেজ পাঠাতে পারবেন। হোয়াটসাপ এপ টি আপনার মোবাইলে আগে থেকেই থাকতে হবে। না থাকলে গুগুল প্লে থেকে ইন্সটল করে নিন।</p>
             </div>
-        </div>
+        </div> 
 
-        <div className='home-bottom-div'>
-            <h1 className='home-bottom-title'>You May Also Like</h1>
-            <div className='home-bottom-grid1'>
-                {data1.map((slide, index) => (
-                    <div className='home-bottom-slide' key={index}>
-                        <div className='home-bottom-slide-image'>
-                            <img src={slide.image} alt=''/>
-                        </div>
-                            <h2 className='home-bottom-slide-title'>{slide.title}</h2>
-                            <span className='home-bottom-slide-date'>{slide.date}</span>
-                    </div>
-                ))}
-            </div>
-            <div className='home-bottom-grid2'>
-                {data2.map((slide, index) => (
-                    <div className='home-bottom-slide' key={index}>
-                        <div className='home-bottom-slide-image'>
-                            <img src={slide.image} alt=''/>
-                        </div>
-                            <h2 className='home-bottom-slide-title'>{slide.title}</h2>
-                            <span className='home-bottom-slide-date'>{slide.date}</span>
-                    </div>
-                ))}
-            </div>
-        </div>
+        <BottomGrid data1={data1} data2={data2}/>
 
     </div>
   )

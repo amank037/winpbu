@@ -84,20 +84,18 @@
     background-color: black;
   }
   
-  /* Show when active */
-  .submenu.active {
+.submenu.active {
     display: flex;
-  }
-  
-  /* Optional: dropdown-toggle cursor */
-  .dropdown-toggle {
+}
+
+.dropdown-toggle {
     display: flex;
     align-items: center;
     gap: 5px;
     cursor: pointer;
     color: white;
     padding: 10px 0;
-  }
+}
 .navbar-container li ul {
     display: none;
     position: absolute;

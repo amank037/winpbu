@@ -51,7 +51,14 @@ const toggleSubmenu = (index) => {
                                 </ul>
                             </li>
 
-                            <li><Link to="/search-agent-by-phone">এজেন্ট কে খুঁজুন</Link></li>
+                            <li>
+                                <div onClick={() => toggleSubmenu(1)} className="dropdown-toggle">
+                                    এজেন্ট কে খুঁজুন <FontAwesomeIcon icon={faChevronDown} className="dropdown-icon" />
+                                </div>
+                                <ul className={activeSubmenu === 1 ? 'submenu active' : 'submenu'}>
+                                    <li><Link to="/search-agent-by-phone">এজেন্ট কে ফোন নাম্বার দিয়ে খুঁজুন</Link></li>
+                                </ul>
+                            </li>
 
                             <li>
                                 <div onClick={() => toggleSubmenu(2)} className="dropdown-toggle">

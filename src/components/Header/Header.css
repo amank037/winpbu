@@ -79,6 +79,7 @@
 }
 .navbar-container a:hover {
     text-decoration: underline;
+
 }
 .submenu {
     display: none;
@@ -125,8 +126,7 @@
 }
 
 .navbar-container li ul a:hover {
-    background-color: #333;
-    text-decoration: underline;
+    color: #FF7C7C;
 }
 
 

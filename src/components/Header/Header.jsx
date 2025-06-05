@@ -9,10 +9,15 @@ import { Link } from 'react-router-dom'
 
 
 function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [activeSubmenu, setActiveSubmenu] = useState(null)
+
+const toggleSubmenu = (index) => {
+  setActiveSubmenu(activeSubmenu === index ? null : index)
+}
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(!isMenuOpen)
   }
 
   return (
@@ -37,8 +42,10 @@ function Header() {
                             <li><Link to="/faq">প্রশ্ন উত্তর</Link></li>
 
                             <li>
-                                <a>সাইট <FontAwesomeIcon icon={faChevronDown} className="dropdown-icon" /></a>
-                                <ul>
+                                <div onClick={() => toggleSubmenu(1)} className="dropdown-toggle">
+                                    সাইট <FontAwesomeIcon icon={faChevronDown} className="dropdown-icon" />
+                                </div>
+                                <ul className={activeSubmenu === 1 ? 'submenu active' : 'submenu'}>
                                     <li><a href="">প্রক্সি লিংক গুলো</a></li>
                                     <li><a href="">ভেল্কি</a></li>
                                 </ul>
@@ -47,8 +54,10 @@ function Header() {
                             <li><Link to="/search-agent-by-phone">এজেন্ট কে খুঁজুন</Link></li>
 
                             <li>
-                                <a>এজেন্ট লিস্ট <FontAwesomeIcon icon={faChevronDown} className="dropdown-icon" /></a>
-                                <ul>
+                                <div onClick={() => toggleSubmenu(2)} className="dropdown-toggle">
+                                    এজেন্ট লিস্ট <FontAwesomeIcon icon={faChevronDown} className="dropdown-icon" />
+                                </div>
+                                <ul className={activeSubmenu === 2 ? 'submenu active' : 'submenu'}>
                                     <li><Link to="/master-agent-list">মাস্টার এজেন্ট লিস্ট</Link></li>
                                     <li><Link to="/super-agent-list">সুপার এজেন্ট লিস্ট</Link></li>
                                     <li><Link to="/sub-admin-list">সাব এডমিন লিস্ট</Link></li>
